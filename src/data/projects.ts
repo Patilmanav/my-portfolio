@@ -1,18 +1,18 @@
 import { IProjectItem, ProjectType, RepoType } from "@/types";
 
 const projects: IProjectItem[] = [
-  // {
-  //   id: "social-media-app-flutter",
-  //   title: "Social Media App",
-  //   description:
-  //     "A social media mobile application developed using Flutter, GetX, Firebase Notifications and Hive.",
-  //   icon: "/skills/flutter.svg",
-  //   repoType: RepoType.Public,
-  //   projectType: ProjectType.Personal,
-  //   githubUrl: "https://github.com/nixrajput/social-media-app-flutter",
-  //   url: "https://github.com/nixrajput/social-media-app-flutter/releases",
-  //   tags: ["Flutter", "Dart", "GetX", "Hive"],
-  // },
+  {
+    id: "face-vault",
+    title: "FaceVault",
+    description:
+      "A secure web application for managing and searching images using face recognition. Built with Next.js, MongoDB, and Cloudinary for image storage.",
+    icon: "/skills/nextjs.png", // Or a relevant icon
+    repoType: RepoType.Private,
+    projectType: ProjectType.Personal,
+    githubUrl: "https://github.com/your-username/face-vault", // Replace with your actual repo URL
+    url: "https://face-vault.onrender.com/dashboard", // Or your deployed URL
+    tags: ["Next.js", "React", "MongoDB", "Cloudinary", "Face Recognition"],
+  },
   // {
   //   id: "e-commerce-app-mern",
   //   title: "E-commerce App",
