@@ -5,6 +5,8 @@ import { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { navMenus } from "@/data/navMenus";
 
+const PortfolioAIBotWidget = dynamic(() => import("@/components/common/PortfolioAIBotWidget"), { ssr: false });
+
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   style: ["normal", "italic"],
@@ -78,10 +80,10 @@ export const metadata: Metadata = {
   ],
 };
 
-const GoogleAnalytics = dynamic(
-  () => import("@/components/common/GoogleAnalytics"),
-  { ssr: false }
-);
+// const GoogleAnalytics = dynamic(
+//   () => import("@/components/common/GoogleAnalytics"),
+//   { ssr: false }
+// );
 const WebVitals = dynamic(() => import("@/components/common/WebVitals"), {
   ssr: false,
 });
@@ -95,13 +97,14 @@ const isDebug = process.env.NODE_ENV === "development";
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
     <html lang="en" className={poppins.className}>
-      {isDebug ? null : <GoogleAnalytics />}
+      {/* {isDebug ? null : <GoogleAnalytics />} */}
 
       <body className={isDebug ? "debug-screens" : ""}>
         {isDebug ? <WebVitals /> : null}
         <FloatingNavbar className="app_nav" navItems={navMenus} />
         <main>{children}</main>
         <ScrollToTop />
+        <PortfolioAIBotWidget />
       </body>
     </html>
   );

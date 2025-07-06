@@ -6,115 +6,85 @@ const projects: IProjectItem[] = [
     title: "FaceVault",
     description:
       "A secure web application for managing and searching images using face recognition. Built with Next.js, MongoDB, and Cloudinary for image storage.",
-    icon: "/skills/nextjs.png", // Or a relevant icon
+    icon: "/skills/nextjs.png",
     repoType: RepoType.Private,
     projectType: ProjectType.Personal,
-    githubUrl: "https://github.com/your-username/face-vault", // Replace with your actual repo URL
-    url: "https://face-vault.onrender.com/dashboard", // Or your deployed URL
+    githubUrl: "https://github.com/your-username/face-vault",
+    url: "https://face-vault.onrender.com/dashboard",
     tags: ["Next.js", "React", "MongoDB", "Cloudinary", "Face Recognition"],
   },
-  // {
-  //   id: "e-commerce-app-mern",
-  //   title: "E-commerce App",
-  //   description:
-  //     "An e-commerce web application developed using React.js, Material UI, Redux, and Stripe.",
-  //   icon: "/skills/react.svg",
-  //   repoType: RepoType.Public,
-  //   projectType: ProjectType.Personal,
-  //   githubUrl: "https://github.com/nixrajput/ecommerce-web-reactjs",
-  //   url: "https://nixlab-shop.vercel.app",
-  //   tags: ["React.js", "Redux", "Material UI", "Stripe"],
-  // },
-  // {
-  //   id: "video-calling-app-flutter",
-  //   title: "Video Calling App",
-  //   description:
-  //     "A video calling mobile application developed using Flutter and Agora SDK that allows users to call each other face to face.",
-  //   icon: "/skills/flutter.svg",
-  //   repoType: RepoType.Public,
-  //   projectType: ProjectType.Personal,
-  //   githubUrl: "https://github.com/nixrajput/video-calling-app-flutter",
-  //   url: "https://github.com/nixrajput/video-calling-app-flutter/releases",
-  //   tags: ["Flutter", "Dart", "GetX", "Agora SDK"],
-  // },
-  // {
-  //   id: "social-media-api-nodejs",
-  //   title: "Social Media API",
-  //   description:
-  //     "A RESTful API developed using Node.js, Express.js, and MongoDB to integrate backend and frontend with ease.",
-  //   icon: "/skills/nestjs.svg",
-  //   repoType: RepoType.Public,
-  //   projectType: ProjectType.Personal,
-  //   githubUrl: "https://github.com/nixrajput/social-media-api-nodejs",
-  //   tags: ["Node.js", "Express.js", "MongoDB", "WebSocket"],
-  // },
-  // {
-  //   id: "grocery-list-maker-app-flutter",
-  //   title: "Grocery List Maker App",
-  //   description:
-  //     "A grocery list maker mobile application developed using Flutter, BloC, Hive DB, and PDF.",
-  //   icon: "/skills/flutter.svg",
-  //   repoType: RepoType.Public,
-  //   projectType: ProjectType.Personal,
-  //   githubUrl: "https://github.com/nixrajput/grocery-list-maker-flutter",
-  //   url: "https://github.com/nixrajput/grocery-list-maker-flutter/releases/latest",
-  //   tags: ["Flutter", "Dart", "BLoC", "PDF", "Hive"],
-  // },
-  // {
-  //   id: "e-commerce-api-nodejs",
-  //   title: "E-commerce API",
-  //   description:
-  //     "A RESTful API developed using Node.js, Express.js, MongoDB, and Stripe to integrate e-commerce backend.",
-  //   icon: "/skills/nodejs.svg",
-  //   repoType: RepoType.Public,
-  //   projectType: ProjectType.Personal,
-  //   githubUrl: "https://github.com/nixrajput/ecommerce-api-nodejs",
-  //   tags: ["Node.js", "Express.js", "MongoDB", "Stripe"],
-  // },
-  // {
-  //   id: "flutter-carousel-widget-package",
-  //   title: "Flutter Carousel Widget Package",
-  //   description:
-  //     "A customizable carousel widget for Flutter, offering features such as infinite scrolling, auto-scrolling, custom child widgets, pre-built indicators, expandable child widgets, auto-sized child support, and enlarged center page.",
-  //   icon: "/skills/flutter.svg",
-  //   repoType: RepoType.Public,
-  //   projectType: ProjectType.Personal,
-  //   githubUrl: "https://github.com/nixrajput/flutter-carousel-widget-package",
-  //   tags: ["Flutter", "Dart", "Carousel"],
-  // },
-  // {
-  //   id: "get-time-ago-package",
-  //   title: "GetTimeAgo Package",
-  //   description:
-  //     "A Dart package that converts and formats DateTime objects into human-readable 'time ago' strings, such as '20 seconds ago', 'a minute ago', or '7 hours ago'.",
-  //   icon: "/skills/dart.svg",
-  //   repoType: RepoType.Public,
-  //   projectType: ProjectType.Personal,
-  //   githubUrl: "https://github.com/nixrajput/gettimeago",
-  //   tags: ["Dart", "DateTime", "Formatting"],
-  // },
-  // {
-  //   id: "portfolio-website",
-  //   title: "Portfolio Website",
-  //   description:
-  //     "This repository contains the source code for a portfolio website built using Next.js and Sass.",
-  //   icon: "/skills/nextjs.png",
-  //   repoType: RepoType.Public,
-  //   projectType: ProjectType.Personal,
-  //   githubUrl: "https://github.com/nixrajput/portfolio-website",
-  //   url: "https://nixrajput.dev",
-  //   tags: ["Next.js", "Sass", "Web Development"],
-  // },
-  // {
-  //   id: "bus-reservation-system-management",
-  //   title: "Bus Reservation System Management",
-  //   description:
-  //     "This repository contains the Bus Reservation System Management project developed using Object Oriented Programming (OOP) and File Handling concepts in C++.",
-  //   icon: "/skills/cpp.png",
-  //   repoType: RepoType.Public,
-  //   projectType: ProjectType.Personal,
-  //   githubUrl: "https://github.com/nixrajput/bus-reservation-system",
-  //   tags: ["C++", "OOP", "File Handling"],
-  // },
+  {
+    id: "rpa-workflow-automation",
+    title: "RPA Workflow Automation Suite",
+    description:
+      "A comprehensive RPA solution that automates complex business workflows including data entry, form processing, and report generation. Built with Python, Selenium, and custom automation frameworks.",
+    icon: "/skills/python.svg",
+    repoType: RepoType.Private,
+    projectType: ProjectType.Personal,
+    githubUrl: "https://github.com/your-username/rpa-workflow-automation",
+    url: "https://rpa-automation-demo.vercel.app",
+    tags: ["Python", "Selenium", "RPA", "Automation", "Workflow"],
+  },
+  {
+    id: "web-scraping-platform",
+    title: "Intelligent Web Scraping Platform",
+    description:
+      "A sophisticated web scraping platform with anti-detection mechanisms, proxy rotation, and data processing capabilities. Handles large-scale data extraction from e-commerce sites and news sources.",
+    icon: "/skills/bs4.png",
+    repoType: RepoType.Public,
+    projectType: ProjectType.Personal,
+    githubUrl: "https://github.com/your-username/web-scraping-platform",
+    url: "https://scraping-platform-demo.vercel.app",
+    tags: ["Python", "BeautifulSoup", "Selenium", "Data Extraction", "Anti-Detection"],
+  },
+  {
+    id: "test-automation-framework",
+    title: "End-to-End Test Automation Framework",
+    description:
+      "A comprehensive test automation framework supporting web, mobile, and API testing with parallel execution, detailed reporting, and CI/CD integration. Built with PyTest and Selenium.",
+    icon: "/skills/pytest.svg",
+    repoType: RepoType.Public,
+    projectType: ProjectType.Personal,
+    githubUrl: "https://github.com/your-username/test-automation-framework",
+    url: "https://test-automation-demo.vercel.app",
+    tags: ["Python", "PyTest", "Selenium", "Test Automation", "CI/CD"],
+  },
+  {
+    id: "api-automation-toolkit",
+    title: "API Automation & Integration Toolkit",
+    description:
+      "A toolkit for automating API testing, data processing, and workflow integration. Features rate limiting, authentication handling, and comprehensive error management.",
+    icon: "/skills/fastapi.svg",
+    repoType: RepoType.Public,
+    projectType: ProjectType.Personal,
+    githubUrl: "https://github.com/your-username/api-automation-toolkit",
+    url: "https://api-automation-demo.vercel.app",
+    tags: ["Python", "FastAPI", "API Testing", "Automation", "Integration"],
+  },
+  {
+    id: "data-processing-pipeline",
+    title: "Automated Data Processing Pipeline",
+    description:
+      "An automated data processing pipeline that handles ETL operations, data validation, and transformation. Integrates with multiple data sources and provides real-time monitoring.",
+    icon: "/skills/python.svg",
+    repoType: RepoType.Private,
+    projectType: ProjectType.Personal,
+    githubUrl: "https://github.com/your-username/data-processing-pipeline",
+    url: "https://data-pipeline-demo.vercel.app",
+    tags: ["Python", "ETL", "Data Processing", "Automation", "Monitoring"],
+  },
+  {
+    id: "ocr-automation-system",
+    title: "OCR Automation System",
+    description:
+      "An intelligent OCR system that automates document processing, text extraction, and data entry from images and PDFs. Uses Tesseract and custom image preprocessing.",
+    icon: "/skills/tesseract.png",
+    repoType: RepoType.Public,
+    projectType: ProjectType.Personal,
+    githubUrl: "https://github.com/your-username/ocr-automation-system",
+    url: "https://ocr-automation-demo.vercel.app",
+    tags: ["Python", "Tesseract", "OCR", "Document Processing", "Automation"],
+  },
 ];
+
 export default projects;

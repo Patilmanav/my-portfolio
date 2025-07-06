@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { cn } from "@/utils/cn";
-import { motion, stagger, useAnimate, useInView } from "framer-motion";
+import { motion, stagger,animate, useAnimate, useInView } from "framer-motion";
 
 export const TypewriterEffect = ({
   words,

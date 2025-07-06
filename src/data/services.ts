@@ -3,60 +3,56 @@ import { IServiceItem } from "@/types";
 const services: IServiceItem[] = [
   {
     id: 1,
-    title: "Mobile App Development",
+    title: "RPA Development",
     icons: [
-      // "/skills/socket-io.png",
-      "/skills/dart.svg",
-      "/skills/flutter.svg",
-      // "/skills/getx.png",
-      "/skills/firebase.svg",
+      "/skills/python.svg",
+      "/skills/selenium.svg",
+      "/skills/playwright.svg",
+      "/skills/automation.svg",
     ],
     shortDescription:
-      "I create engaging mobile applications for your audience.",
+      "I create intelligent robotic process automation solutions to streamline your business operations.",
     description:
-      "I create captivating mobile apps from concept to deployment for iOS and Android. Using cutting-edge technologies, I ensure seamless performance, intuitive interfaces, and robust functionality that align with your business goals. Enjoy a flawless user experience and outstanding results.",
+      "I develop comprehensive RPA solutions using Python, Selenium, and Playwright to automate repetitive tasks, data entry, form filling, and complex workflows. My automation solutions reduce manual errors, increase efficiency, and free up valuable human resources for more strategic tasks.",
   },
   {
     id: 2,
-    title: "Web Development",
+    title: "Web Automation & Scraping",
     icons: [
-      "/skills/redux.svg",
-      "/skills/react.svg",
-      "/skills/nextjs.png",
-      "/skills/html.svg",
-      "/skills/css.svg",
+      "/skills/python.svg",
+      "/skills/bs4.png",
+      "/skills/lxml.png",
+      "/skills/selenium.svg",
     ],
-    shortDescription: "I build visually stunning and user-friendly websites.",
+    shortDescription: "I build powerful web scraping and automation tools for data extraction.",
     description:
-      "I deliver stunning, user-friendly websites to establish your online presence. From simple sites to complex e-commerce platforms, I provide tailored solutions using the latest frameworks and technologies for a seamless, responsive, and SEO-friendly browsing experience. Enhance your online identity with quality.",
+      "I create sophisticated web scraping solutions using BeautifulSoup, lxml, and Selenium to extract, process, and analyze data from websites. From e-commerce price monitoring to lead generation, my automation tools provide accurate, reliable data collection with anti-detection mechanisms.",
   },
   {
     id: 3,
-    title: "Backend Development",
+    title: "API Development & Integration",
     icons: [
-      // "/skills/socket-io.png",
-      "/skills/docker.png",
-      "/skills/nodejs.svg",
-      "/skills/express.svg",
-      "/skills/aws.svg",
+      "/skills/python.svg",
+      "/skills/fastapi.svg",
+      "/skills/django.svg",
+      "/skills/flask.svg",
     ],
-    shortDescription: "I create robust and scalable backend infrastructures.",
+    shortDescription: "I build robust APIs and integrate automation workflows seamlessly.",
     description:
-      "I enhance digital applications with robust, scalable backend infrastructures. I develop efficient database structures, APIs, and configure servers for optimal performance, security, and scalability, ensuring your applications handle high traffic and complex data management seamlessly. Rely on strong backend solutions.",
+      "I develop high-performance REST APIs using FastAPI, Django, and Flask to power automation workflows and data processing pipelines. My APIs handle authentication, rate limiting, and provide comprehensive documentation for seamless integration with existing systems.",
   },
   {
     id: 4,
-    title: "Database Management",
+    title: "Test Automation",
     icons: [
-      "/skills/mysql.svg",
-      // "/skills/postgresql.svg",
-      "/skills/mongodb.svg",
-      // "/skills/redis.svg",
-      "/skills/sqlite.svg",
+      "/skills/python.svg",
+      "/skills/pytest.svg",
+      "/skills/selenium.svg",
+      "/skills/appium.png",
     ],
-    shortDescription: "I manage and optimize your database systems.",
+    shortDescription: "I create comprehensive test automation frameworks for quality assurance.",
     description:
-      "I manage and optimize your database systems for performance, reliability, and scalability. With expertise in SQL and NoSQL databases, I design schemas, write complex queries, and implement best practices for data integrity and security. Ensure your data is managed effectively and efficiently.",
+      "I build end-to-end test automation frameworks using PyTest, Selenium, and Appium for web and mobile applications. My testing solutions include CI/CD integration, parallel execution, detailed reporting, and maintainable test suites that ensure software quality and reliability.",
   },
 ];
 

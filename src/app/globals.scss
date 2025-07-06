@@ -676,6 +676,82 @@ h6 {
   }
 }
 
+/* Automation-themed animations */
+@keyframes circuit-flow {
+  0% {
+    stroke-dashoffset: 1000;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes robot-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+@keyframes data-stream {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes automation-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px var(--primaryColor);
+  }
+  50% {
+    box-shadow: 0 0 20px var(--primaryColor), 0 0 30px var(--primaryColor);
+  }
+}
+
+@keyframes floating-icons {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-5px) rotate(2deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-5px) rotate(-2deg);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .drop_in {
   animation: drop-in 1s ease 200ms backwards;
 }
@@ -690,6 +766,58 @@ h6 {
 
 .slide_out {
   animation: slide-out 1s ease 200ms backwards;
+}
+
+.circuit-flow {
+  animation: circuit-flow 3s ease-in-out infinite;
+}
+
+.robot-pulse {
+  animation: robot-pulse 2s ease-in-out infinite;
+}
+
+.data-stream {
+  animation: data-stream 4s linear infinite;
+}
+
+.automation-glow {
+  animation: automation-glow 2s ease-in-out infinite;
+}
+
+.floating-icons {
+  animation: floating-icons 3s ease-in-out infinite;
+}
+
+.animate-move {
+  animation: move 2s ease-in-out infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+.animate-scale-x {
+  animation: scale-x 0.8s ease-out 0.3s forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-x {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 
 .constrained-width {
@@ -718,4 +846,63 @@ h6 {
   .constrained-width {
     max-width: 100%;
   }
+}
+
+/* Move chat widget to left */
+.rcw-widget-container,
+.rcw-widget-container *,
+body,
+html {
+  pointer-events: auto !important;
+}
+
+.rcw-widget-container {
+  right: 24px !important;
+  left: auto !important;
+  bottom: 24px !important;
+  z-index: 99999 !important;
+  /* background: rgba(255,0,0,0.1) !important; // Uncomment for debug */
+}
+
+/* Animate the launcher button */
+.rcw-launcher {
+  /* animation: bounce 1.2s infinite alternate; */
+  border-radius: 50% !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  position: relative;
+  z-index: 100000 !important;
+  pointer-events: auto !important;
+}
+
+/* Tooltip styling */
+.rcw-launcher[data-tooltip]:hover:after,
+.rcw-launcher[data-tooltip]:focus:after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 60px;
+  top: 0;
+  background: #222;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+.rcw-launcher[data-tooltip]:after {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.rcw-launcher[data-tooltip]:hover:after,
+.rcw-launcher[data-tooltip]:focus:after {
+  opacity: 1;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0% { transform: translateY(0);}
+  100% { transform: translateY(-10px);}
 }
