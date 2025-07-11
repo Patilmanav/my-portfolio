@@ -14,6 +14,20 @@ const projects: IProjectItem[] = [
     tags: ["Next.js", "React", "MongoDB", "Cloudinary", "Face Recognition"],
   },
   {
+    id: "aadhaar-validator-ai-python",
+    title: "Aadhaar Validator - AI-Powered Python Automation",
+    description:
+      "A Python automation tool that validates Indian Aadhaar numbers via the official UIDAI portal using Selenium WebDriver. Features AI-powered CAPTCHA solving (Together AI), and offers both desktop (Tkinter) and web (Flask) interfaces. Fast, production-ready, and cross-platform.",
+    icon: "/skills/python.svg",
+    repoType: RepoType.Private,
+    projectType: ProjectType.Personal,
+    githubUrl: "https://github.com/Patilmanav/aadhar_automation",
+    url: "https://github.com/Patilmanav/aadhar_automation",
+    tags: [
+      "Python", "Selenium", "AI", "CAPTCHA", "Tkinter", "Flask", "Docker", "Automation", "Full Stack"
+    ],
+  },
+  {
     id: "rpa-workflow-automation",
     title: "RPA Workflow Automation Suite",
     description:
@@ -85,6 +99,7 @@ const projects: IProjectItem[] = [
     url: "https://ocr-automation-demo.vercel.app",
     tags: ["Python", "Tesseract", "OCR", "Document Processing", "Automation"],
   },
+  
 ];
 
 export default projects;
